@@ -1,0 +1,28 @@
+<div class="field">
+    <slideshow [showDots]="true" [minHeight]="'100vh'" [imageUrls]="imageUrls"></slideshow>
+
+    <div class="description">
+
+<!--        <div class="smallTitle">-->
+<!--            <h3>Создавайте красоту и уют в вашем доме своими руками!</h3>-->
+<!--        </div>-->
+
+        <div class="bigTitle">
+            <h2>{{ 'slider.slogan' | translate }}</h2>
+        </div>
+
+<!--        <div class="text">-->
+<!--            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer-->
+<!--            possim assum.-->
+<!--        </div>-->
+
+        <div class="registerButton">
+            <button mat-raised-button [disabled]="this.authService.getUser() === undefined" [routerLink]="['/signup']"
+                    class="menu_item" [ngClass]="{'themedBtn': this.authService.getUser() !== undefined}">{{ 'registration.register' | translate}}</button>
+        </div>
+
+
+    </div>
+
+</div>
+

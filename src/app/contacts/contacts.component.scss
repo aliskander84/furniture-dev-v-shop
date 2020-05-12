@@ -1,0 +1,36 @@
+.contactsPage {
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    background: #191919;
+    color: #c7b299;
+    font-size: 20px;
+  }
+
+  &__topLeft {
+
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background: #111111;
+    color: #6b6b6b;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.nestRow {
+  width: 200px;
+}
